@@ -1,30 +1,30 @@
 schema: vela.frontier_lock.v0.1
-generated_at: 2026-06-16T04:22:38.094070+00:00
-vela_version: 0.757.3
+generated_at: 2026-07-06T20:27:49.398698+00:00
+vela_version: 0.757.4
 carina_kernel: carina@0.1.0
 frontier_id: vfr_97d7d25957384f80
 canonicalization:
   json: vela-canonical-json-v0.1
   yaml: vela-yaml-v0.1
 reducer:
-  package: vela@0.757.3
-  digest: sha256:4a0937d8966506b7fb6fdcdd3cd694acccb27e5f767ed712c70e18a3282dc5d3
+  package: vela@0.757.4
+  digest: sha256:6a6a3946570ee6950c06de6ada636ec8dd9aa2ed35307e382942997a2221fc55
 verifiers:
-  package: vela-verify@0.757.3
-  digest: sha256:93a6c78cdebe497efcbe3053492f0a3a6bdc2034a6b0f5af93620eeddeeb9da0
+  package: vela-verify@0.757.4
+  digest: sha256:c856ee70c4db737c1873b786dd406194bcd322e311dff5b3ae6da76a1aad85d1
 carina:
   kernel: carina@0.1.0
   digest: sha256:2de6244bc3c695cd83adf7d17fd9c52b6586ce060874b37814cc35aff340d5ee
-snapshot_hash: sha256:66e009f457b7f28aba9d77970a256340ac58a37a6cb154b7246271902aab853d
-event_log_hash: sha256:44b1f48c333488a3ac2e30aa9d642660e3dc4a0414f253c183f74754d4dccd54
-proposal_state_hash: sha256:2859878eb2a26da3df7e85f351e30ac0995e4aac9fdeea26fc79ebdccd8e24d8
+snapshot_hash: sha256:38ecbb8ea8f53135b2f6513c8fc87b0dc61928ec3b4f3375a93a7a048988a5be
+event_log_hash: sha256:e5adcc636f172a2e19577775aa24599edceb50bf4d06a463cb287c603e028214
+proposal_state_hash: sha256:054cf5541f451f4258b30cc9586fc595daf6bcaf02417bcba73a13247aabf4d9
 sources_hash: sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 artifacts_hash: sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 review_hash: sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945
 proof_freshness: fresh
 proof:
   latest: proof/latest.json
-  digest: sha256:9de9d0e262868d8ed12bd992e501c641a643a285d71e07a3155d46e8e131f8ac
+  digest: sha256:af5bff70bfe41a1cefaf2a22a58448bb1da43a7f2dd24bd3f09f617a8727e576
   freshness: fresh
   events_manifest: proof/events.manifest.jsonl
   replay_trace: proof/replay.trace.jsonl
