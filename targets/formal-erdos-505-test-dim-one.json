@@ -79,6 +79,18 @@
         "The rejected declaration depended on sorryAx after elaboration errors."
       ]
     },
+    "latest_budget_stop": {
+      "run_id": "run_2c316b4a-8605-42b9-a580-603edd758250",
+      "mission_root": "sha256:79a1f0a9fcb887754bfb8499546891f20c0e7b94dc919fe0952f1247f1979443",
+      "failure_root": "sha256:0a735a2556d9dad36b4cd3a7bdcbb85d139e5f47f2431e28ce63e57d6a0172f2",
+      "activity_log_root": "sha256:5b2cdf4e533a2a56efb7cbb883d5dfd6649e835ffe702551668074663e8565f0",
+      "event_stream_root": "sha256:9b493fda68e8b7aef0b807ded636990ccfe14f42388d4a963b8d057d094bc241",
+      "observed_tokens": 197103,
+      "registered_max_observed_tokens": 120000,
+      "observed_result": "The worker wrote a candidate and a final response, but exceeded the registered token ceiling before Canopus accepted the engine result. The verifier and landing did not run; candidate bytes were not advanced.",
+      "operational_repair": "The next runtime contract forbids workspace enumeration, rg, Python, package managers, and full artifact printing; it allows one narrow jq read, one patch, and an optional byte-count check without increasing the token ceiling.",
+      "metadata_diagnostic": "The stopped final response declared artifact kind text/lean instead of the packet's exact lean-proof kind. The next runtime instruction requires both path and kind to match output_contract exactly."
+    },
     "available_names": [
       "IsometryEquiv.mk'",
       "EuclideanSpace.single",
