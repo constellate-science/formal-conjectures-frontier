@@ -1,7 +1,7 @@
 {
   "schema": "formal-conjectures.lean-proof-work.v1",
   "target": "formal:erdos-505-test-dim-one",
-  "objective": "Produce a sorry-free Lean proof of the exact theorem statement Erdos505.erdos_505.test_dim_one from the frozen upstream source. The artifact is only the raw proof term beginning with by; the verifier owns the imports, theorem statement, and axiom audit.",
+  "objective": "Produce a sorry-free Lean proof of the exact theorem statement Erdos505.erdos_505.test_dim_one from the frozen upstream source. Read the bound repair context before constructing the term. The artifact is only the raw proof term beginning with by; the verifier owns the imports, theorem statement, and axiom audit.",
   "selection": {
     "method": "First low-numbered category-test hole on frozen upstream main that is not semantically covered by an open pull request, is not already represented by a frontier finding, and has an explicit tractability signal from the primary problem record.",
     "official_problem": "https://www.erdosproblems.com/505",
@@ -52,6 +52,13 @@
     "lake_manifest_sha256": "sha256:5b99b5f4f807cbba67bbcd22e5e486c17d6a8d970ea218de08d05830ab350c26",
     "lakefile_sha256": "sha256:0d765c3a61564476afccfd0489729033725789f00eb0f1510ba89abe848e35e9",
     "mathlib_git_commit": "a3a10db0e9d66acbebf76c5e6a135066525ac900"
+  },
+  "repair_context": {
+    "path": "targets/formal-erdos-505-test-dim-one-context.md",
+    "sha256": "sha256:0feb589b70e72dfcda7b670ce0562e6dbd16f1f736c676239b832be98f140242",
+    "parent_run_id": "run_5407a1cb-ac23-4927-b3ac-ad790df32544",
+    "parent_failure_root": "sha256:56a73a30a44cf7ffd2ba97c3a0127e4ff5a893d3a9e52a997d0d0d7576e63e20",
+    "authority": "non_authoritative_producer_aid"
   },
   "output_contract": {
     "schema": "canopus.lean-proof-term.v1",
