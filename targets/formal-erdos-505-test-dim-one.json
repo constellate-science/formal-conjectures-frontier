@@ -64,6 +64,21 @@
       "activity_tip": "sha256:9755b56ce98b42d269939b4a9764e6cad7fe397c3544c8351184782d1d4b0136",
       "observed_result": "engine_non_success; verifier and landing were not run"
     },
+    "latest_failed_attempt": {
+      "run_id": "run_da437744-afa3-4914-8aad-725e8fd7faa5",
+      "mission_root": "sha256:cfcb82970bca02e3bb188032343e4545ec20e4be2331dc6ed145e45c0153b035",
+      "engine_result_root": "sha256:71929447ac6b6487516e2d8989d6d15afc46962a864d8fdd64f6d333834479f7",
+      "worker_output_root": "sha256:af0510c0ab9484ccefae92c9962a139144022d1e2b5e15428ca64d7dd361e690",
+      "candidate_artifact_root": "sha256:b70df4e517a58bba1068ba7e9c05f6e261fcde5b897db748cb2bc3fe885325d1",
+      "failure_root": "sha256:1d86408a05caba8c72b8991b61f3adf636928fcc1b16af786f2b5743a2593669",
+      "activity_log_root": "sha256:2c063cd330de28e8f9bf6c199a154148b9c5c6abc69e6cf5ca70ad206b88037d",
+      "observed_result": "The producer supplied a complete candidate, but the registered verifier inherited cwd site and Docker stopped with exit 125 before Lean. A separate exact-container diagnostic from cwd targets then rejected the same candidate during Lean elaboration. Nothing was landed.",
+      "lean_diagnostic": [
+        "IsometryEquiv.mk' was constructed with an Equiv record, but the available constructor expects the forward map, inverse map, left-inverse proof, and distance proof as four arguments.",
+        "hS.image e.symm.continuous does not establish the required Bornology.IsBounded image fact.",
+        "The rejected declaration depended on sorryAx after elaboration errors."
+      ]
+    },
     "available_names": [
       "IsometryEquiv.mk'",
       "EuclideanSpace.single",
@@ -84,6 +99,12 @@
       "Cover T by Icc a m and Ioc m b using subset_Icc_sInf_sSup and a split on x <= m.",
       "Use Real.diam_eq, Real.diam_Icc, and Real.diam_Ioc to prove both interval diameters are strictly smaller.",
       "Map both intervals forward through the isometric equivalence and transport the cover and diameter inequalities."
+    ],
+    "checked_fragments": [
+      "Construct e with IsometryEquiv.mk' applied to EuclideanSpace.single (0 : Fin 1), coordinate evaluation fun x => x 0, the Fin 1 inverse proof, and a distance proof using EuclideanSpace.dist_single_same (0 : Fin 1). Do not wrap these in an Equiv record.",
+      "For T := e.symm '' S, the boundedness term e.symm.isometry.lipschitz.isBounded_image hS elaborates in the frozen environment.",
+      "For the diameter transfer, simpa [T] using e.symm.diam_image S elaborates in the frozen environment.",
+      "The final proof still must establish the midpoint cover and both strict diameter inequalities; these fragments are not a completed proof term."
     ],
     "constraint": "This context contains no completed proof term. The producer must write the raw by term; the separate frozen capsule supplies the exact statement and rejects sorryAx or unregistered axioms."
   },
